@@ -11,7 +11,8 @@ private const val BASE_URL =
     "https://android-kotlin-fun-mars-server.appspot.com"
 
 /**
- * Build the Moshi object with Kotlin adapter factory that Retrofit will be using.
+ * Build the Moshi object that Retrofit will be using, making sure to add the Kotlin adapter for
+ * full Kotlin compatibility.
  */
 private val moshi = Moshi.Builder()
     .add(KotlinJsonAdapterFactory())
